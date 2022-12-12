@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en-us">
+
+<head>
+   <meta charset="utf-8">
+   <title>Logbook - Homepage</title>
+
+   <!-- mobile responsive meta -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+   <meta name="description" content="This is meta description">
+   <meta name="author" content="Themefisher">
+ 
+   <!-- theme meta -->
+   <meta name="theme-name" content="logbook" />
+
+   <!-- plugins -->
+   <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2" style="font-display: optional;">
+   <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:600%7cOpen&#43;Sans&amp;display=swap" media="screen">
+
+   <link rel="stylesheet" href="{% static 'plugins/themify-icons/themify-icons.css' %}">
+   <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+
+   <!-- Main Stylesheet -->
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+   <!--Favicon-->
+   <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+   <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+</head>
+
+<body>
+   
+    
+   <ul>
+      <li>
+         <a href="{% url 'home' %}">home</a>
+      </li>
+
+
+      <li>
+         <a href="{% url 'about' %}">about</a>
+      </li>
+
+
+      <li>
+         <a href="{% url 'author' %}">author</a>
+      </li>
+   </ul>
+
+
+     
+     {% block content %}
+     {% endblock content %}
+   
+   <!-- JS Plugins -->
+   <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script>
+   <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}" async></script>
+   <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+
+   <!-- Main Script -->
+   <script src="{% static 'js/script.js' %}"></script>
+   
+</body>
+</html>
